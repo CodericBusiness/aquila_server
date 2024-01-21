@@ -16,7 +16,8 @@ RUN apt-get update \
     su -c "psql -c \"ALTER USER postgres  WITH PASSWORD 'postgres';\"" - postgres
 
 # Installing yarn
-RUN npm install --g --no-progress @yarnpkg/cli@4.0.2 \
+RUN npm install --g --no-progress yarn && corepack enable \
+    && npm install --g --no-progress yarnpkg/cli@4.0.2 \
     && yarn set version 4.0.2 --yarn-path \
     && yarn config set yarn-offline-mirror /npm-packages-offline-cache \
     && yarn config set yarn-offline-mirror-pruning true
