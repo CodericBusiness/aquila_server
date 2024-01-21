@@ -1,9 +1,9 @@
 ---
 development:
-  dialect: postgres
-  database: aquila_server_development
-  user: postgres
-  password: postgres
+  dialect: mariadb
+  database: aquila_development
+  user: aquila
+  password: aquila
   host: 127.0.0.1
   pool: 5
 
@@ -12,4 +12,6 @@ test:
   database: aquila_test.sqlite
 
 production:
-  url: {{envOr "DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/aquila_server_production?sslmode=disable"}}
+  dialect: sqlite3
+  database: aquila.sqlite
+#  url: {{envOr "DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/aquila_server_production?sslmode=disable"}}
