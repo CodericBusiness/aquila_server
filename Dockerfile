@@ -46,7 +46,7 @@ RUN apt-get update \
     && service postgresql start && \
     su -c "psql -c \"ALTER USER postgres  WITH PASSWORD 'postgres';\"" - postgres
 
-WORKDIR /usr/bin/
+WORKDIR /bin/
 ADD database.yml .
 COPY --from=builder /bin/aquila-server .
 #CMD /bin/aquila-server migrate; /bin/aquila-server
