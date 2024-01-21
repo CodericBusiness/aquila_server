@@ -37,7 +37,8 @@ RUN buffalo build --static -o /bin/aquila-server
 FROM heroku/heroku:22
 ENV GO_ENV=production
 ENV ADDR=0.0.0.0
-EXPOSE 3000
+ENV PORT=3000
+EXPOSE ${PORT}
 
 RUN apt-get update \
     && apt-get install -y -q postgresql postgresql-contrib libpq-dev\
