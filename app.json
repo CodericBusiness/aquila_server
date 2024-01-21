@@ -6,5 +6,7 @@
       "business"
     ],
     "website": "http://aquila.coderic.org",
-    "repository": "https://github.com/CodericLatam/aquila-server"
+    "repository": "https://github.com/CodericLatam/aquila-server",
+    "logo": "https://small-sharp-tool.com/logo.svg",
+    "success_url": "/"
   }
