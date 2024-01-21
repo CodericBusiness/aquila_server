@@ -1,1 +1,1 @@
-web: /bin/aquila-server
+web: aquila-server
