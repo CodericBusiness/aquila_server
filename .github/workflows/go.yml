@@ -31,8 +31,8 @@ jobs:
         npm install --global @yarnpkg/cli@4.0.2 
         yarn set version 4.0.2 --yarn-path
         yarn install
-    - name: Build
-      run: buffalo build
+    - name: Test
+      run: buffalo test
 
-##    - name: Test
-##      run: buffalo test
+##    - name: Build
+##      run: buffalo build
