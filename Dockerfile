@@ -37,15 +37,21 @@ RUN buffalo build --static -o /bin/aquila-server
 FROM heroku/heroku:22
 ENV GO_ENV=production
 ENV ADDR=0.0.0.0
-ENV PORT=3000
-EXPOSE ${PORT}
+ENV HOME=/app \
+    HEROKU_HOME=/heroku \
+    HEROKU_BUILDPACK_VERSION=22 \
+    GO_VERSION=1.21.5 \
+    # Check this file for NODE version:
+    # https://github.com/heroku/heroku-buildpack-ruby/blob/main/lib/language_pack/helpers/nodebin.rb#L5
+    NODE_VERSION=18.9.0 \
+    YARN_VERSION=4.0.2
+EXPOSE 3000
 
 RUN apt-get update \
     && apt-get install -y -q postgresql postgresql-contrib libpq-dev\
     && rm -rf /var/lib/apt/lists/* \
     && service postgresql start && \
     su -c "psql -c \"ALTER USER postgres  WITH PASSWORD 'postgres';\"" - postgres
-
 WORKDIR /bin/
 ADD database.yml .
 COPY --from=builder /bin/aquila-server .
