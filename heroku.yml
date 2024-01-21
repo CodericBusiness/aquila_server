@@ -4,6 +4,6 @@ build:
 
 release:
   command:
-    - /bin/app migrate
+    - /bin/aquila-server migrate
   image: web
 
