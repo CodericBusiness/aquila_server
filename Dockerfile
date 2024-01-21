@@ -1,4 +1,4 @@
-FROM golang:1.21.5
+FROM golang:1.21.5 as builder
 
 RUN apt-get update \
     && apt-get install -y -q build-essential sqlite3 libsqlite3-dev postgresql libpq-dev vim
@@ -58,7 +58,7 @@ RUN apk add --no-cache ca-certificates
 
 WORKDIR /bin/
 
-COPY /bin/app .
+COPY --from=builder /bin/app .
 
 # Uncomment to run the binary in "production" mode:
 # ENV GO_ENV=production
