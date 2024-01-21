@@ -18,9 +18,7 @@ RUN apt-get update \
 # Installing yarn
 RUN npm install --g --no-progress yarn && corepack enable \
     && npm install --g --no-progress @yarnpkg/cli@4.0.2 \
-    && yarn set version 4.0.2 --yarn-path \
-    && yarn config set yarn-offline-mirror /npm-packages-offline-cache \
-    && yarn config set yarn-offline-mirror-pruning true
+    && yarn set version 4.0.2 --yarn-path
 
 # Install golangci
 RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.24.0
