@@ -18,7 +18,7 @@ RUN curl https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/go.tgz | 
 
 RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.24.0
 
-RUN STACK=heroku-22 /tmp/buildpack/heroku/go/bin/compile /app /tmp/build_cache /tmp/env
+RUN STACK=heroku-20 /tmp/buildpack/heroku/go/bin/compile /app /tmp/build_cache /tmp/env
 
 RUN npm install --g --no-progress yarn && corepack enable \
     && npm install --g --no-progress @yarnpkg/cli@4.0.2 \
