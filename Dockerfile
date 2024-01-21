@@ -23,9 +23,7 @@ RUN npm install --g --no-progress yarn && corepack enable \
 # Install golangci
 RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.24.0
 
-# Installing buffalo binary
-COPY buffalo /go/bin/buffalo
-
+RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
 WORKDIR /
 RUN go install github.com/gobuffalo/buffalo-pop/v3@latest
 
