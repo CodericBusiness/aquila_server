@@ -41,7 +41,9 @@
     "webpack-manifest-plugin": "^4.0.0"
   },
   "engines": {
-    "node": "v18.19.0"
+    "node": "18.x",
+    "npm": "10.x",
+    "yarn": "4.x"
   },
   "packageManager": "yarn@4.0.2"
 }
