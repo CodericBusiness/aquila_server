@@ -7,6 +7,5 @@
     ],
     "website": "http://aquila.coderic.org",
     "repository": "https://github.com/CodericLatam/aquila-server",
-    "logo": "https://small-sharp-tool.com/logo.svg",
-    "success_url": "/"
+    "logo": "https://raw.githubusercontent.com/CodericLatam/aquila-server/master/logo.svg"
   }
