@@ -6,3 +6,5 @@ release:
   command:
     - /bin/aquila-server
   image: web
+run:
+  web: /bin/aquila-server
