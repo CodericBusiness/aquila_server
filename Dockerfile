@@ -1,4 +1,4 @@
-FROM golang:1.18
+FROM golang:1.21.5
 
 RUN apt-get update \
     && apt-get install -y -q build-essential sqlite3 libsqlite3-dev postgresql libpq-dev vim
@@ -23,8 +23,8 @@ RUN npm install --g --no-progress yarn && corepack enable \
 # Install golangci
 RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.24.0
 
-RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
 WORKDIR /
+RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
 RUN go install github.com/gobuffalo/buffalo-pop/v3@latest
 
 RUN mkdir /src
@@ -58,7 +58,7 @@ RUN apk add --no-cache ca-certificates
 
 WORKDIR /bin/
 
-COPY --from=builder /bin/app .
+COPY /bin/app .
 
 # Uncomment to run the binary in "production" mode:
 # ENV GO_ENV=production
