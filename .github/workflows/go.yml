@@ -34,5 +34,12 @@ jobs:
     - name: Test
       run: buffalo test
 
-##    - name: Build
-##      run: buffalo build
+    - name: Build
+      run: buffalo build --static
+    - name: Upload Pages artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: aquila_server
+        path: bin/aquila_server
+        retention-days: 1
+        if-no-files-found: error
