@@ -1,6 +1,9 @@
 build:
-  languages:
-    - go
-    - nodejs
-run:
-  web: aquila_server
+  docker:
+    web: Dockerfile
+
+release:
+  command:
+    - /bin/app migrate
+  image: web
+

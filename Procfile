@@ -1,1 +1,1 @@
-web: aquila_server
+web: ./bin/app
