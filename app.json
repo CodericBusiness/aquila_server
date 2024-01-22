@@ -13,10 +13,15 @@
       "plan": "heroku-postgresql"
     }
   ],
+  "buildpacks": [],
   "env": {
-    "GO_ENV": {
-      "description": "Set the Go enviroment production or development.",
-      "value": "production"
+    "GO_ENV":  "production"
+  },
+  "environments": {
+    "test": {
+      "env": {
+        "GO_ENV": "test"
+      }
     }
   }
 }
