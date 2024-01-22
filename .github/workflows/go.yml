@@ -33,13 +33,21 @@ jobs:
         yarn install
     - name: Test
       run: buffalo test
-
     - name: Build
       run: buffalo build --static
     - name: Upload Pages artifact
       uses: actions/upload-artifact@v4
       with:
         name: aquila_server
+        path: bin/aquila_server
+        retention-days: 1
+        if-no-files-found: error
+    - name: Build for Windows
+      run: GOOS=windows GOARCH=386 buffalo build --static
+    - name: Upload Pages artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: aquila_server.exe
         path: bin/aquila_server
         retention-days: 1
         if-no-files-found: error
