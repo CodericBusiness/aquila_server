@@ -35,9 +35,11 @@ FROM heroku/heroku:22
 COPY --from=builder /bin/aquila_server /app/bin/aquila_server
 ENV HOME /app
 ENV GO_ENV production
+ENV PORT 3000
+EXPOSE 3000
 WORKDIR /app
 RUN useradd -m heroku
 USER heroku
-CMD /app/bin/aquila_server
+ENTRYPOINT /app/bin/aquila_server
 
 
