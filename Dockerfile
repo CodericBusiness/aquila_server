@@ -26,19 +26,15 @@ RUN npm install --g --no-progress yarn && corepack enable \
 
 # Build App
 WORKDIR /app
-ADD package.json .
-ADD yarn.lock .yarnrc.yml ./
-RUN yarn install
-COPY go.mod go.mod
-COPY go.sum go.sum
-RUN go mod download
 ADD . .
+RUN go mod download
 RUN yarn install
 RUN buffalo build --static -o /bin/aquila_server
 
 FROM heroku/heroku:22
 COPY --from=builder /bin/aquila_server /app/bin/aquila_server
 ENV HOME /app
+ENV GO_ENV production
 WORKDIR /app
 RUN useradd -m heroku
 USER heroku
