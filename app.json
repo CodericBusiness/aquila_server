@@ -1,11 +1,11 @@
 {
-    "name": "aquila-server",
+    "name": "aquila_server",
     "description": "Deploying and running the Aquila server",
     "keywords": [
       "aquila",
       "business"
     ],
     "website": "http://aquila.coderic.org",
-    "repository": "https://github.com/CodericLatam/aquila-server",
-    "logo": "https://raw.githubusercontent.com/CodericLatam/aquila-server/master/logo.svg"
+    "repository": "https://github.com/CodericLatam/aquila_server",
+    "logo": "https://raw.githubusercontent.com/CodericLatam/aquila_server/master/logo.svg"
   }

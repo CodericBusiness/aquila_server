@@ -1,5 +1,5 @@
-name = "aquila-server"
-bin = "bin/aquila-server"
+name = "aquila_server"
+bin = "bin/aquila_server"
 vcs = "git"
 with_pop = true
 with_sqlite = true

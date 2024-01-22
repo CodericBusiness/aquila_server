@@ -1,6 +1,6 @@
 # Aquila Server
 
-[![Go](https://github.com/CodericLatam/aquila-server/actions/workflows/go.yml/badge.svg)](https://github.com/CodericLatam/aquila-server/actions/workflows/go.yml)
+[![Go](https://github.com/CodericLatam/aquila_server/actions/workflows/go.yml/badge.svg)](https://github.com/CodericLatam/aquila_server/actions/workflows/go.yml)
 
 El servidor puede ser desplegado directamente en Heroku mediante los siguientes comandos
 ```sh

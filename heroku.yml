@@ -3,4 +3,4 @@ build:
     - go
     - nodejs
 run:
-  web: aquila-server
+  web: aquila_server

@@ -1,1 +1,1 @@
-web: aquila-server
+web: aquila_server
