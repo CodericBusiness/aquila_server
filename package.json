@@ -24,7 +24,7 @@
     "copy-webpack-plugin": "~12.0.2",
     "css-loader": "~3.5.1",
     "expose-loader": "^5.0.0",
-    "file-loader": "~6.0.0",
+    "file-loader": "~6.2.0",
     "glob": "^7.2.0",
     "gopherjs-loader": "^0.0.1",
     "mini-css-extract-plugin": "^2.8.0",
