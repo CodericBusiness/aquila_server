@@ -2105,7 +2105,7 @@ __metadata:
     copy-webpack-plugin: "npm:~12.0.2"
     css-loader: "npm:~6.10.0"
     expose-loader: "npm:^5.0.0"
-    file-loader: "npm:~6.0.0"
+    file-loader: "npm:~6.2.0"
     glob: "npm:^7.2.0"
     gopherjs-loader: "npm:^0.0.1"
     jquery: "npm:^3.6.0"
@@ -2773,15 +2773,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-loader@npm:~6.0.0":
-  version: 6.0.0
-  resolution: "file-loader@npm:6.0.0"
+"file-loader@npm:~6.2.0":
+  version: 6.2.0
+  resolution: "file-loader@npm:6.2.0"
   dependencies:
     loader-utils: "npm:^2.0.0"
-    schema-utils: "npm:^2.6.5"
+    schema-utils: "npm:^3.0.0"
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
-  checksum: 512d367d87d9a4926eb2db529758272ab97f0028a10ea3f8ac852dc708dd7f8fb8920a59907011d1b27f93f4f4d917e9026df9e2a5fe8de1f8a8318f9e8e174c
+  checksum: e176a57c2037ab0f78e5755dbf293a6b7f0f8392350a120bd03cc2ce2525bea017458ba28fea14ca535ff1848055e86d1a3a216bdb2561ef33395b27260a1dd3
   languageName: node
   linkType: hard
 
