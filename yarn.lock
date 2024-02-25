@@ -2106,7 +2106,7 @@ __metadata:
     css-loader: "npm:~6.10.0"
     expose-loader: "npm:^5.0.0"
     file-loader: "npm:~6.2.0"
-    glob: "npm:^7.2.0"
+    glob: "npm:^10.3.10"
     gopherjs-loader: "npm:^0.0.1"
     jquery: "npm:^3.6.0"
     jquery-ujs: "npm:^1.2.2"
