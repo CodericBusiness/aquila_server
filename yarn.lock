@@ -1368,10 +1368,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-free@npm:^5.12.0":
-  version: 5.15.4
-  resolution: "@fortawesome/fontawesome-free@npm:5.15.4"
-  checksum: 0a12f11b17b3073475df965d423ac485715e281d11ecde17250fab5dc0a177fb29ced59242f6c024bef59429c502ba8fe831ed9500e14713cc30138e70df8fbc
+"@fortawesome/fontawesome-free@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@fortawesome/fontawesome-free@npm:6.5.1"
+  checksum: dc359ede1ddfc6d91915345143008420001c56b164a6fe95d81bcca631eecca41009bfacf794d55bdb9d927c112119ce90a11cb4f576a815ed69ec681e5eb824
   languageName: node
   linkType: hard
 
@@ -2097,7 +2097,7 @@ __metadata:
     "@babel/cli": "npm:^7.0.0"
     "@babel/core": "npm:^7.0.0"
     "@babel/preset-env": "npm:^7.0.0"
-    "@fortawesome/fontawesome-free": "npm:^5.12.0"
+    "@fortawesome/fontawesome-free": "npm:^6.5.1"
     "@popperjs/core": "npm:^2.0.0"
     autoprefixer: "npm:^9.7.6"
     babel-loader: "npm:^9.1.3"
