@@ -27,7 +27,7 @@
     "file-loader": "~6.2.0",
     "glob": "^10.0.0",
     "gopherjs-loader": "^0.0.1",
-    "mini-css-extract-plugin": "^2.8.0",
+    "mini-css-extract-plugin": "^2.8.1",
     "npm-install-webpack-plugin": "4.0.5",
     "postcss-loader": "^8.1.0",
     "sass": "^1.71.1",
